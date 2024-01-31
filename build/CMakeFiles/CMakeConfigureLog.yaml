@@ -1530,3 +1530,85 @@ events:
         [2/2] : && /usr/bin/c++   CMakeFiles/cmTC_41522.dir/src.cxx.o -o cmTC_41522   && :
         
       exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake/Modules/FindLibLZMA.cmake:97 (CHECK_LIBRARY_EXISTS)"
+      - "cmake/external/auto_updates/xz/CMakeLists.txt:11 (find_package)"
+    checks:
+      - "Looking for lzma_auto_decoder in /usr/lib/liblzma.so"
+    directories:
+      source: "/home/ars/gh/tdesktop/build/CMakeFiles/CMakeScratch/TryCompile-RDmwyf"
+      binary: "/home/ars/gh/tdesktop/build/CMakeFiles/CMakeScratch/TryCompile-RDmwyf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "LIBLZMA_HAS_AUTO_DECODER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ars/gh/tdesktop/build/CMakeFiles/CMakeScratch/TryCompile-RDmwyf'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_464f7
+        [1/2] /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=lzma_auto_decoder -o CMakeFiles/cmTC_464f7.dir/CheckFunctionExists.c.o -c /home/ars/gh/tdesktop/build/CMakeFiles/CMakeScratch/TryCompile-RDmwyf/CheckFunctionExists.c
+        [2/2] : && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=lzma_auto_decoder  CMakeFiles/cmTC_464f7.dir/CheckFunctionExists.c.o -o cmTC_464f7  /usr/lib/liblzma.so && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake/Modules/FindLibLZMA.cmake:98 (CHECK_LIBRARY_EXISTS)"
+      - "cmake/external/auto_updates/xz/CMakeLists.txt:11 (find_package)"
+    checks:
+      - "Looking for lzma_easy_encoder in /usr/lib/liblzma.so"
+    directories:
+      source: "/home/ars/gh/tdesktop/build/CMakeFiles/CMakeScratch/TryCompile-2tNifb"
+      binary: "/home/ars/gh/tdesktop/build/CMakeFiles/CMakeScratch/TryCompile-2tNifb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "LIBLZMA_HAS_EASY_ENCODER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ars/gh/tdesktop/build/CMakeFiles/CMakeScratch/TryCompile-2tNifb'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_47a05
+        [1/2] /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=lzma_easy_encoder -o CMakeFiles/cmTC_47a05.dir/CheckFunctionExists.c.o -c /home/ars/gh/tdesktop/build/CMakeFiles/CMakeScratch/TryCompile-2tNifb/CheckFunctionExists.c
+        [2/2] : && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=lzma_easy_encoder  CMakeFiles/cmTC_47a05.dir/CheckFunctionExists.c.o -o cmTC_47a05  /usr/lib/liblzma.so && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake/Modules/FindLibLZMA.cmake:99 (CHECK_LIBRARY_EXISTS)"
+      - "cmake/external/auto_updates/xz/CMakeLists.txt:11 (find_package)"
+    checks:
+      - "Looking for lzma_lzma_preset in /usr/lib/liblzma.so"
+    directories:
+      source: "/home/ars/gh/tdesktop/build/CMakeFiles/CMakeScratch/TryCompile-Z213sT"
+      binary: "/home/ars/gh/tdesktop/build/CMakeFiles/CMakeScratch/TryCompile-Z213sT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin;/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "LIBLZMA_HAS_LZMA_PRESET"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ars/gh/tdesktop/build/CMakeFiles/CMakeScratch/TryCompile-Z213sT'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ae7dc
+        [1/2] /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=lzma_lzma_preset -o CMakeFiles/cmTC_ae7dc.dir/CheckFunctionExists.c.o -c /home/ars/gh/tdesktop/build/CMakeFiles/CMakeScratch/TryCompile-Z213sT/CheckFunctionExists.c
+        [2/2] : && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=lzma_lzma_preset  CMakeFiles/cmTC_ae7dc.dir/CheckFunctionExists.c.o -o cmTC_ae7dc  /usr/lib/liblzma.so && :
+        
+      exitCode: 0
+...
