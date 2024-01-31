@@ -1,0 +1,14 @@
+{
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "cmake.configureOnOpen": true,
+  "files.associations": { ".cpp": "cpp", ".h": "cpp" },
+  "docker.containers.label": "Compose Project Name",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modifications",
+  "editor.tabSize": 4,
+  "files.autoSave": "onFocusChange",
+  "files.autoSaveDelay": 1000,
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "git.autofetch": true,
+  "git.confirmSync": false
+}
