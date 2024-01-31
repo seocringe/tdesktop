@@ -1,0 +1,3 @@
+/home/ars/gh/tdesktop/build/CMakeFiles/CMakeScratch/TryCompile-7MroRX/CMakeFiles/cmTC_b2df7.dir
+/home/ars/gh/tdesktop/build/CMakeFiles/CMakeScratch/TryCompile-7MroRX/CMakeFiles/edit_cache.dir
+/home/ars/gh/tdesktop/build/CMakeFiles/CMakeScratch/TryCompile-7MroRX/CMakeFiles/rebuild_cache.dir
