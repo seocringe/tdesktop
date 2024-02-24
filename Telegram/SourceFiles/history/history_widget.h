@@ -101,6 +101,7 @@ class VoiceRecordBar;
 class ForwardPanel;
 class TTLButton;
 class WebpageProcessor;
+class CharactersLimitLabel;
 } // namespace HistoryView::Controls
 
 class BotKeyboard;
@@ -253,7 +254,7 @@ public:
 	[[nodiscard]] rpl::producer<> cancelRequests() const {
 		return _cancelRequests.events();
 	}
-	void searchInChatEmbedded(std::optional<QString> query = {});
+	bool searchInChatEmbedded(Dialogs::Key chat, QString query);
 
 	void updateNotifyControls();
 
@@ -551,6 +552,7 @@ private:
 	[[nodiscard]] bool insideJumpToEndInsteadOfToUnread() const;
 	void createUnreadBarAndResize();
 
+	[[nodiscard]] TextWithEntities prepareTextForEditMsg() const;
 	void saveEditMsg();
 
 	void setupPreview();
@@ -649,7 +651,9 @@ private:
 
 	bool kbWasHidden() const;
 
-	void searchInChat();
+	void switchToSearch(QString query);
+
+	void checkCharsLimitation();
 
 	MTP::Sender _api;
 	FullReplyTo _replyTo;
@@ -772,6 +776,8 @@ private:
 	object_ptr<Ui::InputField> _field;
 	base::unique_qptr<Ui::RpWidget> _fieldDisabled;
 	base::unique_qptr<Ui::RpWidget> _sendRestriction;
+	using CharactersLimitLabel = HistoryView::Controls::CharactersLimitLabel;
+	base::unique_qptr<CharactersLimitLabel> _charsLimitation;
 	QString _sendRestrictionKey;
 	Ui::Animations::Simple _inPhotoEditOver;
 	bool _inDetails = false;

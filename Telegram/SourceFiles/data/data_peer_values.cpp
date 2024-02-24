@@ -69,7 +69,7 @@ std::optional<QString> OnlineTextCommon(LastseenStatus status, TimeId now) {
 		return tr::lng_status_online(tr::now);
 	} else if (status.isLongAgo()) {
 		return tr::lng_status_offline(tr::now);
-	} else if (status.isRecently() || status.isHiddenByMe()) {
+	} else if (status.isRecently() || status.isHidden()) {
 		return tr::lng_status_recently(tr::now);
 	} else if (status.isWithinWeek()) {
 		return tr::lng_status_last_week(tr::now);
@@ -270,11 +270,13 @@ inline auto DefaultRestrictionValue(
 			AdminRightValue(
 				channel,
 				ChatAdminRight::PostMessages),
+			channel->unrestrictedByBoostsValue(),
 			RestrictionsValue(channel, rights),
 			DefaultRestrictionsValue(channel, rights),
 			[=](
 					ChannelDataFlags flags,
 					bool postMessagesRight,
+					bool unrestrictedByBoosts,
 					ChatRestrictions sendRestriction,
 					ChatRestrictions defaultSendRestriction) {
 				const auto notAmInFlags = Flag::Left | Flag::Forbidden;
@@ -284,7 +286,7 @@ inline auto DefaultRestrictionValue(
 					|| ((flags & Flag::HasLink)
 						&& !(flags & Flag::JoinToWrite));
 				const auto restricted = sendRestriction
-					| defaultSendRestriction;
+					| (defaultSendRestriction && !unrestrictedByBoosts);
 				return allowed
 					&& !forumRestriction
 					&& (postMessagesRight
